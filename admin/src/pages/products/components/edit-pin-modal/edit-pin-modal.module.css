@@ -1,0 +1,119 @@
+.modal_card {
+  width: auto;
+  height: auto;
+}
+
+.modal_content {
+  display: flex;
+  padding: 24px 18px 8px 28px;
+}
+
+.left {
+  margin-right: 40px;
+}
+
+.title, .textField_label, .textArea_label {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.textArea_label {
+  margin-top: 24px;
+}
+
+.textField_container {
+  width: 100%;
+  margin: 16px 0px 24px;
+}
+
+.textField_container:first-of-type {
+  margin-top: 0px;
+}
+
+.textField_input, .textField_input::placeholder {
+  height: 40px;
+  font-size: 15px;
+}
+
+.textArea_container {
+  width: 100%;
+}
+
+.textArea_input {
+  height: 100px;
+}
+
+.prices {
+  height: 364px;
+  margin-top: 12px;
+  overflow: scroll;
+}
+
+.priceItem {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border-color);
+  border-radius: var(--small-border-radius);
+  padding: 0px 12px;
+  margin: 12px 0px;
+}
+
+.priceItem:first-child {
+  margin-top: 0px;
+}
+
+.priceItemText {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--money-color);
+}
+
+.priceItemIcon {
+  --size: 20px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.priceItemIcon:hover {
+  color: var(--accent-color);
+}
+
+.addPin {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #E0E0E0;
+  border-radius: var(--small-border-radius);
+}
+
+.addPin:focus-within {
+  border-color: black;
+}
+
+.addPinInput_container {
+  width: 100%;
+  font-size: 15px;
+}
+
+.addPinInput_input {
+  height: 100%;
+  border: none;
+  padding-right: 0px;
+}
+
+.addPinInput_input::-webkit-outer-spin-button,
+.addPinInput_input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.addPinIcon {
+  flex-shrink: 0;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0px 8px;
+}
+
+.addPinIcon:hover {
+  color: var(--accent-color);
+}

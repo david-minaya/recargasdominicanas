@@ -1,0 +1,6 @@
+.toolbar {
+  height: 34px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+}

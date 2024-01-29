@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  flex-shrink: 0;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.chart {
+  width: 100%;
+  display: block;
+  flex-grow: 1;
+}
+
+.line {
+  stroke: rgba(0, 0, 0, 8%);
+}
+
+.tickText {
+  fill: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  text-anchor: end;
+}
+
+.barContainer {
+  cursor: pointer;
+}
+
+.barContainer:hover > .value {
+  visibility: visible;
+}
+
+.barTitle {
+  fill: rgba(0, 0, 0, 0.75);
+  font-size: 12px;
+  text-anchor: middle;
+}
+
+.value {
+  visibility: hidden;
+  fill: rgba(20%, 20%, 20%);
+  font-size: 12px;
+}
+
+.rect {
+  fill: #27AE60;
+}

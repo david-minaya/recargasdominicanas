@@ -1,0 +1,19 @@
+.base {
+  border: 1px solid var(--accent-color);
+}
+
+.disabled {
+  border-color: var(--border-color);
+}
+
+.disabled:hover {
+  background-color: transparent;
+}
+
+.disabled.base:hover .text {
+  color: lightgray;
+}
+
+.disabled.base:hover .icon {
+  color: lightgray;
+}

@@ -1,0 +1,5 @@
+.container {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 0px 16px;
+}

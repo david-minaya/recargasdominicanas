@@ -1,0 +1,73 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px 0px;
+}
+
+.datetime_container {
+  width: 220px;
+}
+
+.datetime_container {
+  margin-right: 20px;
+}
+
+.datetime_container:nth-child(2) {
+  margin-right: 16px;
+}
+
+.datetime_input {
+  height: 40px;
+  font-size: 15px;
+}
+
+.filterButton_base {
+  padding: 0px 12px 0px 8px;
+  margin-right: 4px;
+}
+
+.filterButton_base:hover {
+  background-color: rgba(0, 0, 0, 0.05)
+}
+
+.filterButton_icon {
+  --size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-right: 8px;
+}
+
+.filterButton_text {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.button_base {
+  margin-left: auto;
+}
+
+.table_container {
+  width: initial;
+  flex-grow: 1;
+  padding: 0px 10px;
+  margin: 4px 0px 0px 10px;
+}
+
+.tableHeader_cellContent {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8)
+}
+
+.tableRow_cell:last-child {
+  padding-right: 16px;
+}
+
+.phone {
+  font-size: 16px;
+}

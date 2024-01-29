@@ -1,0 +1,65 @@
+.container {
+  width: 324px;
+  position: absolute;
+  top: 60px;
+  right: 24px;
+  background-color: white;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0px 2px 12px lightgray;
+  padding: 20px 20px 24px;
+  z-index: 3;
+}
+
+.animation_enter {
+  opacity: 0.5;
+  transform: translateY(-16px);
+}
+
+.animation_enterActive {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 180ms ease-out, transform 180ms ease-out;
+}
+
+.animation_exit {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.animation_exitActive {
+  opacity: 0.1;
+  transform: translateY(-16px);
+  transition: opacity 180ms linear, transform 180ms linear;
+}
+
+.name {
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.account {
+  color: var(--accent-color);
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.idItem_container {
+  margin-top: 24px;
+}
+
+.logoutButton_base {
+  width: 100%;
+  justify-content: start;
+  margin-top: 20px;
+  padding: 0px 12px;
+}
+
+.logoutButton_icon {
+  --size: 22px;
+  margin-right: 12px;
+}
+
+.logoutButton_text {
+  font-size: 15px;
+}

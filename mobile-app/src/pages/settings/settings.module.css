@@ -1,0 +1,21 @@
+.content {
+  padding: 24px 20px;
+}
+
+.button_base {
+  width: 100%;
+  height: 44px;
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+
+.modal_card {
+  width: calc(100%);
+  min-height: fit-content;
+  max-width: 400px;
+  margin: 16px;
+}
+
+.modalContent {
+  margin: 12px 0px 20px;
+}

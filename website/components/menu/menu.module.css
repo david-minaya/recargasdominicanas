@@ -1,0 +1,96 @@
+.menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0px;
+  border-bottom: 1px solid lightgray;
+}
+
+.animation_enter {
+  height: 0px;
+  opacity: 0;
+}
+
+.animation_enterActive {
+  height: 160px;
+  opacity: 1;
+  transition: height 0.2s ease-out, opacity 0.6s ease-out 0.3s;
+}
+
+.animation_exit {
+  height: 160px;
+  opacity: 1;
+}
+
+.animation_exitActive {
+  height: 0px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in, height 0.2s ease-in 0.2s;
+}
+
+.option {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--accent-color);
+  font-size: 17px;
+  margin: 28px 12px 16px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button_base {
+  width: 200px;
+  border: 2px solid var(--accent-color);
+  margin: 28px;
+}
+
+.button_base:hover {
+  color: white;
+  background-color: var(--accent-color);
+}
+
+@media (min-width: 449px) {
+
+  .animation_enter {
+    height: 0px;
+  }
+  
+  .animation_enterActive {
+    height: 72px;
+  }
+  
+  .animation_exit {
+    height: 72px;
+  }
+  
+  .animation_exitActive {
+    height: 0px;
+  }
+
+  .option {
+    margin: 18px;
+  }
+  
+  .button_base {
+    margin: 16px;
+  } 
+}
+
+@media (min-width: 800px) {
+
+  .menu {
+    width: 400px;
+    justify-self: end;
+    justify-content: space-between;
+    padding: 0px;
+    border: none;
+  }
+
+  .option {
+    margin: 0px;
+  }
+  
+  .button_base {
+    margin: 0px;
+  }
+}

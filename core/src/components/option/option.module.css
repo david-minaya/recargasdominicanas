@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  align-items: center;
+  cursor: default;
+  margin: 2px auto;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.container:hover {
+  background-color: var(--background-color);
+}
+
+.icon {
+  --size: 24px;
+  margin-right: 16px;
+}
+
+.text {
+  font-size: 15px;
+}

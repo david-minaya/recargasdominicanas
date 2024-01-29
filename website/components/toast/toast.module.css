@@ -1,0 +1,53 @@
+.container {
+  display: grid;
+  max-width: 500px;
+  grid-template-columns: auto 24px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.658);
+  box-shadow: 0px 2px 8px lightgray;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 12px 12px 16px;
+}
+
+.animation_enter {
+  margin-bottom: -75px
+}
+
+.animation_enterActive {
+  margin-bottom: 0px;
+  transition: margin-bottom 0.3s;
+}
+
+.animation_exitActive {
+  margin-bottom: -76px;
+  transform: translateY(25px);
+  transition: margin-bottom 0.2s ease-in, transform 0.1s 0.2s ease-out;
+}
+
+.text {
+  display: inline-block;
+  color: white;
+  font-size: 17px;
+  margin-right: 24px;
+}
+
+.icon_icon {
+  color: white;
+  font-size: 20px;
+}
+
+@media (min-width: 388px) {
+
+  .animation_exitActive {
+    margin-bottom: -56px;
+  }
+}
+
+@media (min-width: 650px) {
+
+  .animation_exitActive {
+    margin-bottom: -100px;
+    transition: margin-bottom 0.3s;
+  }
+}

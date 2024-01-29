@@ -1,0 +1,16 @@
+.container {
+  white-space: nowrap;
+  padding: 0px 26px;
+  font-size: 15px;
+  border-bottom: 1px solid #ECECEC;
+  cursor: default;
+}
+
+.container:first-child {
+  padding-left: 0px;
+}
+
+.container:last-child {
+  width: 100%;
+  padding-right: 0px;
+}

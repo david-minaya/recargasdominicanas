@@ -1,0 +1,13 @@
+.footer {
+  background-color: #f7f7f7;
+}
+
+.footerSections {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.horizontalLine_line {
+  height: 12px;
+  margin-top: 40px;
+}

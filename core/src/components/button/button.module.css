@@ -1,0 +1,63 @@
+.base {
+  width: fit-content;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  outline: none;
+  border: none;
+  background-color: white;
+  border-radius: 4px;
+  padding: 0px 16px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (pointer: fine) {
+
+  .base:hover {
+    background-color: rgb(241 38 38 / 0.03);
+  }
+}
+
+.base:active {
+  background-color: rgb(241 38 38 / 0.06);
+}
+
+.hidden {
+  display: none;
+}
+
+.icon {
+  cursor: pointer;
+  color: var(--accent-color);
+  margin-right: 16px;
+}
+
+.rightIcon {
+  cursor: pointer;
+  color: var(--accent-color);
+  margin-left: 16px;
+}
+
+.text {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Roboto;
+  color: var(--accent-color);
+  user-select: none;
+}
+
+.disabled .text {
+  color: lightgray;
+}
+
+.disabled.base {
+  cursor: default;
+}
+
+.disabled .icon {
+  color: lightgray;
+}

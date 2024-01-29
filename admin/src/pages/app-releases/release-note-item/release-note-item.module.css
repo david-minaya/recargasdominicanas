@@ -1,0 +1,44 @@
+.container {
+  border-radius: var(--small-border-radius);
+  border: 1px solid var(--border-color);
+  padding: 10px 10px 16px 12px;
+  margin-top: 20px;
+}
+
+.container:first-of-type {
+  margin-top: 12px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.title {
+  font-size: 14px;
+}
+
+.icon {
+  --size: 20px;
+  color: rgba(0, 0, 0, 0.75)
+}
+
+.description {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 12px;
+}
+
+.menu_container {
+  width: 160px;
+}
+
+.menuOption_container {
+  padding: 8px 16px;
+}
+
+.menuOption_text {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.9);
+}

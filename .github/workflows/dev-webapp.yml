@@ -1,0 +1,58 @@
+name: Dev Webapp
+
+on: 
+  workflow_dispatch:
+  push:
+    branches: dev
+    paths: webapp/**
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: webapp
+
+    permissions:
+      contents: read
+      id-token: write
+      packages: read
+    
+    env:
+      IMAGE: gcr.io/${{ secrets.GCP_PROJECT_ID }}/dev-webapp:${{ github.sha }}
+      SERVICE: dev-webapp
+    
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v0
+        with:
+          workload_identity_provider: ${{ secrets.GCP_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+      
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v0
+      
+      - name: Authorize Docker push
+        run: gcloud auth configure-docker
+
+      - name: Build Container
+        run:
+          docker build .
+            --tag ${{ env.IMAGE }}
+            --build-arg GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+            --build-arg API=https://dev-api.recargasdominicanas.do
+            --build-arg IMAGES_DOMAIN=https://dev-api.recargasdominicanas.do/image
+
+      - name: Push Container
+        run: docker push ${{ env.IMAGE }}
+
+      - name: Deploy to Cloud Run
+        uses: google-github-actions/deploy-cloudrun@v0
+        with:
+          image: ${{ env.IMAGE }}
+          service: ${{ env.SERVICE }}
+          region: us-east1

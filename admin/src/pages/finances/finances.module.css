@@ -1,0 +1,72 @@
+.container {
+  overflow-x: auto;
+  padding: 0px 32px;
+}
+
+.toolbar {
+  min-width: 400px;
+  height: 56px;
+  align-items: center;
+}
+
+.title_title {
+  font-size: 17px;
+}
+
+.options {
+  display: flex;
+  gap: 12px;
+}
+
+.menu_container {
+  width: 200px
+}
+
+.menuOption_text {
+  font-size: 15px;
+  color: rgb(0, 0, 0, 0.8);
+}
+
+.content {
+  width: 100%;
+  min-width: 400px;
+  margin: 0px auto;
+  overflow-y: auto;
+  max-width: 1440px;
+}
+
+.financeItems {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  overflow-x: auto;
+}
+
+.financeItems::-webkit-scrollbar { 
+  display: none;
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 0px 4px 8px;
+  margin-top: 24px;
+}
+
+.chartColumn, .verticalBarCharts {
+  height: 536px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.verticalBarCharts {
+  min-width: 380px;
+  flex-grow: 1;
+  gap: 44px;
+}
+
+.verticalBarChart {
+  flex-grow: 1;
+}

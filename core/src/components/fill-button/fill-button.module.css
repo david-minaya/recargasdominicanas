@@ -1,0 +1,26 @@
+.base {
+  background-color: var(--accent-color);
+}
+
+.base .text {
+  color: white;
+}
+
+@media (pointer: fine) {
+
+  .base:hover {
+    background-color: #db1a1a;
+  }
+}
+
+.base:active {
+  background-color: #c40b0b;
+}
+
+.disabled {
+  background-color: var(--border-color);
+}
+
+.disabled .text {
+  color: gray;
+}

@@ -1,0 +1,21 @@
+.container {
+  height: 100%;
+  padding: 20px 0px 0px 20px;
+  overflow: hidden;
+}
+
+.table_container {
+  padding-right: 10px;
+  overflow: scroll;
+}
+
+.tableHeader_tab {
+  border-top: 1px solid var(--border-color);
+}
+
+.description {
+  width: 100%;
+  min-width: 280px;
+  white-space: normal;
+  padding: 8px 26px;
+}

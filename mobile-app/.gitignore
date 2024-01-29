@@ -1,0 +1,10 @@
+.idea/
+.vscode/
+node_modules/
+dist/
+*.map
+.DS_Store
+.sourcemaps
+package-lock.json
+.env
+playground.ts

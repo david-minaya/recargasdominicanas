@@ -1,0 +1,58 @@
+name: Test Server
+
+on:
+  workflow_call:
+
+jobs:
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: server
+    
+    env:
+      NODE_ENV: development
+      HOST: localhost
+      PORT: 2000
+      DEBUG: false
+      DB_HOST: 127.0.0.1
+      DB_PORT: 3306
+      DB_NAME: recargas_do_test
+      DB_USER: root
+      DB_PASS: root
+      CROSS_ORIGIN_RESOURCE_POLICY: cross-origin
+      ALLOWED_DOMAINS: http://localhost:3000, http://localhost:4000
+      SESSION_NAME: connect.sid
+      SESSION_SECRET: secret235
+      COOKIE_SECURE: false
+      COOKIE_SAME_SITE: lax
+      COOKIE_MAX_AGE: 315576000000 # 10 years
+      OWNER_NAME: Test User
+      OWNER_EMAIL: test@example.com
+      OWNER_PASSWORD: test
+      GCS_BUCKET: local-recargas-dominicanas
+      GOOGLE_APPLICATION_CREDENTIALS: service-account.json
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Start MySQL Server
+        run: sudo systemctl start mysql.service
+
+      - name: Create Database
+        run: mysql -u root -proot -e "CREATE DATABASE ${{ env.DB_NAME }}"
+
+      - name: Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: npm-${{ hashFiles('server/package.json') }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Test
+        run: npm run test

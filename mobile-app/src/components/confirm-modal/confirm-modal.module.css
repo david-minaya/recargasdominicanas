@@ -1,0 +1,21 @@
+.modal_card {
+  width: 312px;
+  min-height: initial;
+  margin: 16px;
+}
+
+.modalToolbar_container {
+  border-bottom: none;
+}
+
+.modalContent {
+  font-weight: 300;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 8px;
+}
+
+.actionButton_base {
+  height: 36px;
+  
+}

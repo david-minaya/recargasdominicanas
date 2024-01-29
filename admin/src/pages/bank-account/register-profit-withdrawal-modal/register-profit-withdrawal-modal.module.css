@@ -1,0 +1,35 @@
+.modal_card {
+  width: 340px;
+  height: initial;
+  min-height: 480px;
+}
+
+.modal_content {
+  padding: 0px 20px;
+}
+
+.profit {
+  margin-top: 20px;
+}
+
+.profitTitle {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.profitValue {
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--money-color);
+  margin-top: 12px;
+}
+
+.textField_container, .dateTime_container {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.textField_input {
+  height: 40px;
+  font-size: 15px;
+}

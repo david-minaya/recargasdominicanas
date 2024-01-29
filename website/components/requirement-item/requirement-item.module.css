@@ -1,0 +1,63 @@
+.requirementItem {
+  height: 116px;
+  width: calc(100% - 40px);
+  max-width: 600px;
+  display: flex;
+  box-shadow: 0px 2px 6px lightgray;
+  border-radius: 4px;
+  margin: 52px 24px 0px;
+}
+
+.image {
+  width: 128px;
+  height: 120px;
+  flex: 0 0;
+  padding: 18px;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+
+.description {
+  flex: 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 2px;
+}
+
+@media (max-width: 590px) {
+
+  .requirementItem {
+    height: auto;
+    max-width: 480px;
+  }
+
+  .image {
+    width: 88px;
+    height: 88px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .description {
+    justify-content: start;
+    padding: 18px 18px 18px 4px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}

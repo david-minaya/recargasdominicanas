@@ -1,0 +1,22 @@
+.drawerHeader {
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px;
+  padding-bottom: 18px;
+}
+
+.drawerImage {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.drawerTitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.drawerName {
+  font-size: 15px;
+  margin-top: 10px;
+}

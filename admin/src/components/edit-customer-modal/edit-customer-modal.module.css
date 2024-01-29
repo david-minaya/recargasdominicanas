@@ -1,0 +1,44 @@
+.modal_card {
+  width: 524px;
+  height: 680px;
+}
+
+.modal_content {
+  overflow: scroll;
+  padding: 0px 14px 0px 24px;
+}
+
+.customerTitle {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 26px;
+}
+
+.businessTitle {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+.fieldsContent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.textField_container {
+  width: 220px;
+  margin-top: 32px;
+}
+
+.textField_input {
+  height: 40px;
+  font-size: 15px;
+}
+
+.selectOption_container {
+  padding: 12px 4px 12px 12px;
+  font-size: 15px;
+}

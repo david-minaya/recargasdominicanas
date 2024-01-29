@@ -1,0 +1,43 @@
+.faqItem {
+  box-shadow: 0px 1px 3px lightgray;
+  border-radius: 4px;
+  padding: 16px 0px 24px;
+  margin-top: 36px;
+}
+
+.header {
+  min-height: 32px;
+  display: grid;
+  grid-template-columns: auto 32px;
+  align-items: center;
+  padding: 0px 8px 0px 16px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 400;
+  align-self: center;
+  margin: 2px 4px 0px 0px;
+}
+
+.icon_icon {
+  font-size: 32px;
+  align-self: flex-start;
+  margin-left: auto;
+}
+
+.details {
+  max-width: 688px;
+  height: 96px;
+  overflow: hidden;
+  transition: height 0.3s;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0px 16px;
+}
+
+.paragraph {
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}

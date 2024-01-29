@@ -1,0 +1,11 @@
+.container {
+  padding: 12px;
+  background-color: #F126260A;
+  border-radius: 4px;
+}
+
+.message {
+  color: var(--accent-color);
+  font-weight: 500;
+  margin-right: auto;
+}

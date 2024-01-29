@@ -1,0 +1,32 @@
+.field {
+  width: 100%;
+  max-width: 260px;
+  margin-top: 32px;
+}
+
+.label {
+  display: block;
+  font-size: 15px;
+}
+
+.textArea {
+  height: 80px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Roboto';
+  background-color: #F5F5F5;
+  border: none;
+  outline: none;
+  margin-top: 12px;
+  padding: 10px 12px;
+  resize: none;
+}
+
+.error {
+  color: var(--accent-color);
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 8px;
+}

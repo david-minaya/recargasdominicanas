@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+
+.backgroundAnimation_appear {
+  opacity: 0;
+}
+
+.backgroundAnimation_appearActive {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.backgroundAnimation_exitActive {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(00, 00, 00, 0.27);
+}
+
+.drawerAnimation_appear {
+  transform: translateX(-100%);
+}
+
+.drawerAnimation_appearActive {
+  transform: translateX(0px);
+  transition: transform 300ms;
+}
+
+.drawerAnimation_exitActive {
+  transform: translateX(-500px);
+  transition: transform 300ms;
+}
+
+.drawer {
+  width: 280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  z-index: 2;
+  overflow: auto;
+}
+
+.drawerItems {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 0px;
+}

@@ -1,0 +1,54 @@
+.container {
+  position: relative;
+  color: black;
+  box-sizing: content-box;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.container:hover {
+  background-color: rgb(0 0 0 / 0.04);
+}
+
+.container:active, .active, .active:hover {
+  color: black;
+}
+
+.icon {
+  --size: 26px;
+}
+
+.indicator {
+  width: 16px;
+  height: 4px;
+  display: none;
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.active > .indicator {
+  display: block;
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 48px;
+  opacity: 0;
+  transition: opacity 200ms;
+  white-space: nowrap;
+  transform: translateY(-50%);
+  pointer-events: none;
+  background-color: rgb(95% 95% 95%);
+  font-size: 13px;
+  padding: 2px 8px;
+  border-radius: 8px;
+}
+
+.showLabel {
+  opacity: 1;
+}

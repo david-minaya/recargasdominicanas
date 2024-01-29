@@ -1,0 +1,293 @@
+.hero {
+  display: flex;
+  min-height: 600px;
+  max-width: 1200px;
+  margin: 64px auto 0px;
+}
+
+.introduction {
+  flex: 1 1;
+  min-width: 320px;
+  margin: 0px 40px 32px;
+}
+
+.introduction h2 {
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 124px;
+  margin-bottom: 32px;
+}
+
+.introduction p {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.introductionButton_base {
+  width: 200px;
+  color: white;
+  background-color: var(--accent-color);
+  margin-top: 24px;
+}
+
+.imageContainer {
+  flex: 3 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0px 12px;
+  padding-top: 40px;
+}
+
+.heroImage {
+  width: 100%;
+  max-width: 700px;
+}
+
+.title {
+  text-align: center;
+  color: var(--accent-color);
+  font-size: 28px;
+  font-weight: 500;
+  padding: 0px 15%;
+  margin-top: 100px;
+}
+
+.title2 {
+  composes: title;
+  margin-top: 124px;
+}
+
+.services, .paymentMethods {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.circleItemService_image {
+  width: 112px;
+  height: 112px;
+  padding: 16px;
+}
+
+.imageItems {
+  max-width: 1200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px auto 0px;
+}
+
+.imageItem {
+  width: 116px;
+  height: 72px;
+  margin: 40px 0px;
+  object-fit: contain;
+}
+
+.imageItemHidden {
+  composes: imageItem; 
+  display: none; 
+}
+
+.systemSectionDesktop_image {
+  max-width: 540px;
+  width: 100%;
+  height: auto;
+}
+
+.systemSectionApp_systemSection {
+  flex-direction: row-reverse;
+  margin-top: 80px;
+}
+
+.systemSectionApp_image {
+  width: auto;
+  height: 400px;
+}
+
+.iconItems {
+  max-width: 1040px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 24px auto;
+}
+
+.iconItems > div {
+  width: 368px;
+  margin: 0px 12px;
+}
+
+.circleItemPayment_image {
+  width: 112px;
+  height: 112px;
+  padding: 8px;
+}
+
+.requirementItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.questionsSection {
+  margin: 140px 0px 100px;
+  padding: 0px 24px;
+}
+
+.questionsSectionTitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.questionsSectionText {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 18px;
+  line-height: 26px;
+}
+
+.questionSectionLink {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 500;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button_base {
+  width: 200px;
+  display: block;
+  color: white;
+  background-color: var(--accent-color);
+  margin: 100px auto 160px;
+}
+
+@media (max-width: 1076px) {
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .introduction {
+    width: 510px;
+    margin: 40px auto;
+  }
+
+  .imageContainer {
+    justify-content: center;
+    padding-top: 0px;
+  }
+
+  .introduction h2 {
+    margin-top: 40px;
+  }
+
+  .introductionButton_base {
+    display: none;
+  }
+
+  .paymentMethods {
+    max-width: 880px;
+  }
+
+  .services {
+    max-width: 880px;
+    height: 700px;
+  }
+  
+  .imageItems {
+    justify-content: space-between;
+    max-width: 940px;
+  }
+
+  .imageItem {
+    margin: 80px 60px;
+  }
+
+  .imageItemHidden {
+    display: inline;
+    visibility: hidden;
+  }
+
+  .systemSectionApp_systemSection {
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 800px) {
+  
+  .services {
+    max-width: 400px;
+    height: auto;
+    justify-content: center;
+  }
+
+  .service {
+    margin: 80px 0px 0px;
+  }
+
+  .paymentMethods {
+    justify-content: space-around;
+    max-width: 640px;
+  }
+
+  .circleItemPayment_circleItem {
+    margin: 80px 60px 0px;
+  }
+
+  .imageItems {
+    max-width: 600px;
+    justify-content: space-around;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 590px) {
+
+  .title {
+    font-size: 26px;
+  }
+  
+  .introduction {
+    width: auto;
+    margin: 0px 22px 32px;
+  }
+
+  .systemSectionApp_systemSection {
+    margin-top: 100px;
+  }
+
+  .paymentMethods {
+    max-width: 500px;
+  }
+
+  .circleItemPayment_circleItem {
+    width: 124px;
+    margin: 80px 24px 0px;
+  }
+
+  .circleItemPayment_image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .imageItems {
+    max-width: 500px;
+  }
+
+  .imageItem {
+    width: 80px;
+    height: 60px;
+    margin: 52px 44px;
+  }
+
+  .iconItems > div {
+    width: 316px;
+  }
+}

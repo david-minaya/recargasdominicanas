@@ -1,0 +1,35 @@
+.productItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: var(--small-border-radius);
+  padding: 12px;
+}
+
+.productItemImage {
+  width: 32px;
+  height: 32px;
+}
+
+.productItemInfo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productItemName {
+  display: block;
+  margin-left: 24px;
+}
+
+.productItemType {
+  width: 72px;
+  font-size: 15px;
+  font-style: italic;
+  color: #555555;
+}
+
+.deleteOption_text {
+  color: var(--accent-color);
+}

@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px;
+  margin-left: auto;
+}
+
+.actionButton_base {
+  width: 100%;
+  height: 34px;
+  min-width: 124px;
+  max-width: 144px;
+}

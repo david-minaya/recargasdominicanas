@@ -1,0 +1,39 @@
+.container {
+  width: 260px;
+}
+
+.label {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.input {
+  height: 44px;
+  width: 100%;
+  display: block;
+  font-family: Roboto;
+  font-size: 15px;
+  resize: none;
+  background-color: white;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  outline: none;
+  padding: 12px 14px;
+}
+
+.input::placeholder {
+  font-size: 15px;
+  color: #666666;
+}
+
+.input:focus {
+  border-color: black;
+}
+
+.hint {
+  font-size: 13px;
+  margin-top: 8px;
+  margin-left: 4px;
+}

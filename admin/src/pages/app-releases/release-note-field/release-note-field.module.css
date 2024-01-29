@@ -1,0 +1,67 @@
+.field {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  border-radius: var(--small-border-radius);
+  padding: 0px 12px;
+  margin-top: 20px;
+}
+
+.textField_container, .textArea_container {
+  width: 100%;
+}
+
+.textField_input {
+  height: 40px;
+  font-size: 14px;
+  border: none;
+  padding: 0px;
+}
+
+.textField_input::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.textArea_input {
+  height: 58px;
+  font-size: 14px;
+  font-weight: 300;
+  border: none;
+  padding: 12px 0px;
+}
+
+.textArea_input::placeholder {
+  font-size: 14px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 6px;
+}
+
+.error {
+  margin-top: 0px;
+}
+
+.buttons {
+  display: flex;
+  margin-left: auto;
+}
+
+.button_base {
+  height: 24px;
+  font-size: 14px;
+  padding: 0px;
+  margin-left: 20px;
+}
+
+.button_text {
+  font-size: 13px;
+  font-weight: 500;
+}

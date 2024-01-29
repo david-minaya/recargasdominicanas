@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot desktop version 1`] = `
+<Header>
+  <div
+    className="header"
+  >
+    <Link
+      href="/"
+    >
+      <a
+        className="titleContainer"
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        <img
+          className="icon"
+          src="recargas_dominicanas_32x32.svg"
+        />
+        <div
+          className="title"
+        >
+          Recargas Dominicanas
+        </div>
+      </a>
+    </Link>
+    <Menu>
+      <div
+        className="menu"
+      >
+        <Link
+          href="/"
+        >
+          <a
+            className="option"
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Preguntas frecuentes
+          </a>
+        </Link>
+        <Button
+          customStyle={
+            Object {
+              "default": "button",
+            }
+          }
+          onClick={[Function]}
+          text="Solicitar Sistema"
+        >
+          <button
+            className="button"
+            onClick={[Function]}
+          >
+            Solicitar Sistema
+          </button>
+        </Button>
+      </div>
+    </Menu>
+  </div>
+</Header>
+`;
+
+exports[`snapshot mobile version 1`] = `
+<Header>
+  <div
+    className="header"
+  >
+    <Link
+      href="/"
+    >
+      <a
+        className="titleContainer"
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        <img
+          className="icon"
+          src="recargas_dominicanas_32x32.svg"
+        />
+        <div
+          className="title"
+        >
+          Recargas Dominicanas
+        </div>
+      </a>
+    </Link>
+    <Button
+      customStyle={
+        Object {
+          "default": "menuButton",
+        }
+      }
+      onClick={[Function]}
+      text="Menu"
+    >
+      <button
+        className="menuButton"
+        onClick={[Function]}
+      >
+        Menu
+      </button>
+    </Button>
+  </div>
+  <CSSTransition
+    classNames={Object {}}
+    in={false}
+    timeout={
+      Object {
+        "enter": 900,
+        "exit": 400,
+      }
+    }
+    unmountOnExit={true}
+  >
+    <Transition
+      appear={false}
+      enter={true}
+      exit={true}
+      in={false}
+      mountOnEnter={false}
+      onEnter={[Function]}
+      onEntered={[Function]}
+      onEntering={[Function]}
+      onExit={[Function]}
+      onExited={[Function]}
+      onExiting={[Function]}
+      timeout={
+        Object {
+          "enter": 900,
+          "exit": 400,
+        }
+      }
+      unmountOnExit={true}
+    />
+  </CSSTransition>
+</Header>
+`;
+
+exports[`snapshot mobile version with the menu opened 1`] = `
+<Header>
+  <div
+    className="header"
+  >
+    <Link
+      href="/"
+    >
+      <a
+        className="titleContainer"
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        <img
+          className="icon"
+          src="recargas_dominicanas_32x32.svg"
+        />
+        <div
+          className="title"
+        >
+          Recargas Dominicanas
+        </div>
+      </a>
+    </Link>
+    <Button
+      customStyle={
+        Object {
+          "default": "menuButton",
+        }
+      }
+      onClick={[Function]}
+      text="Menu"
+    >
+      <button
+        className="menuButton"
+        onClick={[Function]}
+      >
+        Menu
+      </button>
+    </Button>
+  </div>
+  <CSSTransition
+    classNames={Object {}}
+    in={true}
+    timeout={
+      Object {
+        "enter": 900,
+        "exit": 400,
+      }
+    }
+    unmountOnExit={true}
+  >
+    <Transition
+      appear={false}
+      enter={true}
+      exit={true}
+      in={true}
+      mountOnEnter={false}
+      onEnter={[Function]}
+      onEntered={[Function]}
+      onEntering={[Function]}
+      onExit={[Function]}
+      onExited={[Function]}
+      onExiting={[Function]}
+      timeout={
+        Object {
+          "enter": 900,
+          "exit": 400,
+        }
+      }
+      unmountOnExit={true}
+    >
+      <Menu>
+        <div
+          className="menu"
+        >
+          <Link
+            href="/"
+          >
+            <a
+              className="option"
+              href="/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Preguntas frecuentes
+            </a>
+          </Link>
+          <Button
+            customStyle={
+              Object {
+                "default": "button",
+              }
+            }
+            onClick={[Function]}
+            text="Solicitar Sistema"
+          >
+            <button
+              className="button"
+              onClick={[Function]}
+            >
+              Solicitar Sistema
+            </button>
+          </Button>
+        </div>
+      </Menu>
+    </Transition>
+  </CSSTransition>
+</Header>
+`;

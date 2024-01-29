@@ -1,0 +1,27 @@
+.modal_card {
+  width: auto;
+  height: auto;
+}
+
+.modal_content {
+  display: flex;
+  padding: 24px;
+}
+
+.rightPane {
+  width: 220px;
+  margin-left: 52px;
+}
+
+.textField_container {
+  width: 100%;
+}
+
+.textField_input, .textField_input::placeholder {
+  height: 40px;
+  font-size: 15px;
+}
+
+.textField_container:not(:first-child) {
+  margin-top: 24px;
+}

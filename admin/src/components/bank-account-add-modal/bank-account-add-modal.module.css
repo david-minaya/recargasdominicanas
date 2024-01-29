@@ -1,0 +1,42 @@
+.modal_card {
+  width: 348px;
+  height: 400px;
+}
+
+.modal_content {
+  padding: 0px 20px;
+}
+
+.textField_container {
+  width: 100%;
+  margin-top: 28px;
+}
+
+.textField_input {
+  height: 40px;
+  font-size: 15px;
+}
+
+.select_container {
+  width: 100%;
+  margin-top: 28px;
+}
+
+.select_popup {
+  padding: 4px 0px;
+}
+
+.bankItem {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.bankImage {
+  height: 24px;
+}
+
+.bankName {
+  margin-left: 16px;
+  font-size: 16px;
+}

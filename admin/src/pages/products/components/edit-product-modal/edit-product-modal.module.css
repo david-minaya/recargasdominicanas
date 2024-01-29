@@ -1,0 +1,46 @@
+.modal_card {
+  width: auto;
+  height: auto;
+}
+
+.modal_content {
+  display: flex;
+  padding: 24px;
+}
+
+.rightPane {
+  width: 220px;
+  margin-left: 52px;
+}
+
+.textField_container {
+  width: 100%;
+}
+
+.textField_input, .textField_input::placeholder {
+  height: 40px;
+  font-size: 15px;
+}
+
+.textField_container:not(:first-child) {
+  margin-top: 24px;
+}
+
+.select_container {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.selectOption_container {
+  padding: 12px 0px 12px 12px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.inlineTextField_container {
+  width: 100px;
+}

@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  --size: 22px;
+  margin-right: 20px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+}

@@ -1,0 +1,13 @@
+.modal_card {
+  width: 312px;
+  min-height: initial;
+}
+
+.toolbar_container {
+  border-bottom: none;
+}
+
+.toolbar_title {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 17px;
+}

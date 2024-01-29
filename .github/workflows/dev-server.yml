@@ -1,0 +1,91 @@
+name: Dev Server
+
+on: 
+  workflow_dispatch:
+  push:
+    branches: dev
+    paths: server/**
+
+jobs:
+
+  test:
+    name: Test
+    uses: ./.github/workflows/test-server.yml
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: test
+    
+    defaults:
+      run:
+        working-directory: server
+
+    permissions:
+      contents: read
+      id-token: write
+    
+    env:
+      IMAGE: gcr.io/${{ secrets.GCP_PROJECT_ID }}/dev-server:${{ github.sha }}
+      SERVICE: dev-server
+    
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v0
+        with:
+          workload_identity_provider: ${{ secrets.GCP_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+      
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v0
+
+      - name: Authorize Docker push
+        run: gcloud auth configure-docker
+
+      - name: Set up Cloud SQL Auth Proxy
+        run: |
+          wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O cloud_sql_proxy
+          chmod +x cloud_sql_proxy
+          sudo mkdir /cloudsql 
+          sudo chmod 777 /cloudsql
+
+      - name: Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: npm-${{ hashFiles('server/package.json') }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Container
+        run: docker build -t ${{ env.IMAGE }} .
+
+      - name: Push Container
+        run: docker push ${{ env.IMAGE }}
+
+      - name: Backup database
+        run: gcloud sql backups create --instance=dev-db
+
+      - name: Migrate database
+        env:
+          DB_NAME: ${{ secrets.DEV_DB_NAME }}
+          DB_USER: ${{ secrets.DEV_DB_USER }}
+          DB_PASS: ${{ secrets.DEV_DB_PASS }}
+          OWNER_NAME: ${{ secrets.DEV_OWNER_NAME }}
+          OWNER_EMAIL: ${{ secrets.DEV_OWNER_EMAIL }}
+          OWNER_PASSWORD: ${{ secrets.DEV_OWNER_PASSWORD }}
+          DB_SOCKET_PATH: /cloudsql/${{ secrets.DEV_INSTANCE_CONNECTION_NAME }}
+        run: |
+          ./cloud_sql_proxy -dir=/cloudsql -instances=${{ secrets.DEV_INSTANCE_CONNECTION_NAME }} &
+          npm run migration:run
+          npm run update-database
+
+      - name: Deploy to Cloud Run
+        uses: google-github-actions/deploy-cloudrun@v0
+        with:
+          image: ${{ env.IMAGE }}
+          service: ${{ env.SERVICE }}
+          region: us-east1

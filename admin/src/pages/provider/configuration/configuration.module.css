@@ -1,0 +1,65 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.addButton_base {
+  width: 100px;
+  height: 32px;
+  flex-shrink: 0;
+  margin: 20px 20px 0px;
+}
+
+.configurations {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 0px 20px;
+  margin-top: 32px;
+}
+
+.configuration {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.textField_input {
+  height: 40px;
+  font-size: 15px;
+}
+
+.textField_container {
+  margin-right: 24px;
+}
+
+.icon {
+  --size: 28px;
+  margin: 6px 0px;
+}
+
+.actionButtons {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.actionButton_base {
+  width: 112px;
+  margin-left: 32px;
+}
+
+.configItem {
+  border: 1px solid var(--border-color);
+  border-radius: var(--small-border-radius);
+  padding: 12px;
+}
+
+.configItemName {
+  font-weight: 500;
+}
+
+.configItemValue {
+  margin-top: 8px;
+}

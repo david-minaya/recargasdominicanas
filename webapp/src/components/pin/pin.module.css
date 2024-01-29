@@ -1,0 +1,24 @@
+.select_container {
+  width: 260px;
+}
+
+.select_input {
+  padding: 0px 8px 0px 12px;
+}
+
+.select_value {
+  color: var(--money-color);
+  font-weight: 500;
+}
+
+.select_popup {
+  max-height: 240px;
+  overflow: auto;
+}
+
+.option_container {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--money-color);
+  padding: 12px;
+}

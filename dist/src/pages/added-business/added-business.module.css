@@ -1,0 +1,29 @@
+.title {
+  color: rgba(0, 0, 0, 90%);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 28px 16px 0px;
+}
+
+.link {
+  color: #1978E5;
+  word-break: break-all;
+  user-select: text;
+  margin: 28px 16px;
+}
+
+.copy {
+  height: 40px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 85%);
+  background-color: rgba(0, 0, 0, 5%);
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 40px 16px;
+}
+
+.copy:active {
+  background-color: rgba(0, 0, 0, 10%);
+}

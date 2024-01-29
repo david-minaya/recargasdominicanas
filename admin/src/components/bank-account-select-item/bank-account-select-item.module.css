@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  display: flex;
+  padding: 8px;
+}
+
+.image {
+  width: 32px;
+  height: 32px;
+}
+
+.data {
+  width: 100%;
+  margin-left: 16px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row:not(:first-child) {
+  margin-top: 12px;
+}
+
+.name {
+  display: block;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.closeIcon {
+  --size: 20px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.account {
+  display: block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.balance {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--money-color);
+}

@@ -1,0 +1,95 @@
+.modal_card {
+  width: 352px;
+  height: auto;
+  min-height: 340px;
+}
+
+.modal_content {
+  padding: 0px 20px;
+}
+
+.item {
+  border: 1px solid var(--border-color);
+  border-radius: var(--small-border-radius);
+  padding: 16px;
+  margin-top: 24px;
+}
+
+.itemTitle {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.username {
+  display: block;
+  color: var(--accent-color);
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.stateTitle {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 20px 2px 0px;
+}
+
+.state {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: var(--small-border-radius);
+  padding: 14px;
+  margin: 16px 2px;
+}
+
+.stateActivated {
+  composes: state;
+  color: var(--money-color);
+  border: 1px solid #BDE3C8;
+}
+
+.stateDisabled {
+  composes: state;
+  color: #666666;
+  border: 1px solid var(--border-color);
+}
+
+.title {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-left: 2px;
+}
+
+.activationLink {
+  display: flex;
+  background-color: var(--background-color);
+  padding: 12px;
+  margin: 20px 2px;
+  border-radius: var(--small-border-radius);
+}
+
+.link {
+  flex-grow: 1;
+  word-break: break-all;
+  margin-right: 16px;
+}
+
+.icon {
+  --size: 20px;
+  flex-shrink: 0;
+}
+
+.expired {
+  color: var(--accent-color);
+  font-size: 15px;
+  font-weight: 500;
+  margin: 20px 2px;
+}
+
+.updateLinkButton_base {
+  width: calc(100% - 4px);
+  margin: 4px 2px 12px;
+}

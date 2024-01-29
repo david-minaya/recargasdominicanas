@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round');
+
+.icon {
+  --size: 24px;
+  display: block;
+  width: var(--size);
+  height: var(--size);
+  font-size: var(--size);
+  cursor: pointer;
+  overflow: hidden;
+  user-select: none;
+}

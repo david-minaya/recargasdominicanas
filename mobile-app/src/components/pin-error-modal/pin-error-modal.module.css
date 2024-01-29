@@ -1,0 +1,26 @@
+.card {
+  width: 312px;
+  min-height: initial;
+  background-color: white;
+}
+
+.content {
+  padding: 4px 20px 0px;
+}
+
+.detailItem_container {
+  margin: 0px 4px;
+}
+
+.detailItem_title {
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.error_container {
+  margin-top: 8px;
+}
+
+.error_message {
+  font-size: 15px;
+}

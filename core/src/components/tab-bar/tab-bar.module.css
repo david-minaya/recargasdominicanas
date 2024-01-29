@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  overflow-x: auto;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.tab_container {
+  padding: 16px 32px 0px;
+}
+
+.tab_container:first-child {
+  padding-left: 20px;
+}

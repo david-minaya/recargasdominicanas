@@ -1,0 +1,21 @@
+.card {
+  width: 312px;
+  min-height: initial;
+}
+
+.detailItem_container {
+  margin: 0px 4px;
+}
+
+.detailItem_title {
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.detailItem_text {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.detailItem_green {
+  color: var(--money-color)
+}

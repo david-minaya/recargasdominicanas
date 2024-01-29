@@ -1,0 +1,92 @@
+name: Dev Mobile App
+
+on: 
+  workflow_dispatch:
+  push:
+    branches: dev
+    paths: mobile-app/**
+
+jobs:
+  build:
+    name: Build APK
+    runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: mobile-app
+    
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Configure npm
+        run: npm config set '//npm.pkg.github.com/:_authToken'=${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        env:
+          API: https://dev-api.recargasdominicanas.do
+          IMAGES_DOMAIN: https://dev-api.recargasdominicanas.do/image
+          AUTO_UPDATE: true
+        run: npm run build
+
+      - name: Sync project
+        env:
+          CAPACITOR_SCHEME: https
+          CAPACITOR_HOSTNAME: dev-app.recargasdominicanas.do
+        run: npm run sync
+
+      - name: Create env.xml file
+        run: 
+          echo
+            '<?xml version="1.0" encoding="utf-8"?>'
+            '<resources>'
+            '<string name="api">https://dev-api.recargasdominicanas.do</string>'
+            '</resources>'
+            > android/app/src/main/res/values/env.xml
+
+      - name: Create keystore
+        run: echo '${{ secrets.KEY_STORE }}' | base64 --decode > keystore.jks
+
+      - name: Init gradle
+        working-directory: mobile-app/android
+        env:
+          JAVA_HOME: $JAVA_HOME_17_X64
+        run: |
+          echo $JAVA_HOME_17_X64
+          echo $JAVA_HOME
+          chmod +x ./gradlew
+          ./gradlew
+
+      - name: Get app name
+        id: app-name
+        working-directory: mobile-app/android
+        run: |
+          version=$(./gradlew -q printVersion)
+          echo "name=recargasdominicanas-dev-$version" >> $GITHUB_OUTPUT
+
+      - name: Build APK
+        working-directory: mobile-app/android
+        run: ./gradlew :app:assembleDev -Dorg.gradle.java.home=$JAVA_HOME_17_X64
+
+      - name: Align APK
+        run: 
+          $ANDROID_SDK_ROOT/build-tools/33.0.0/zipalign
+            -v -p 4 
+            android/app/build/outputs/apk/dev/app-dev-unsigned.apk 
+            app-dev-unsigned-aligned.apk
+
+      - name: Sign APK
+        run: 
+          $ANDROID_SDK_ROOT/build-tools/33.0.0/apksigner sign 
+            --ks keystore.jks 
+            --ks-pass pass:${{ secrets.KEY_STORE_PASS }} 
+            --out ${{ steps.app-name.outputs.name }}.apk
+            app-dev-unsigned-aligned.apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ steps.app-name.outputs.name }}.zip
+          path: mobile-app/${{ steps.app-name.outputs.name }}.apk

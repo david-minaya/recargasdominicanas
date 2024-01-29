@@ -1,0 +1,41 @@
+.container {
+  width: 360px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}
+
+.container:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+.container::-webkit-scrollbar-button {
+  height: 4px;
+}
+
+.data {
+  padding: 20px 6px 4px 16px;
+}
+
+.data div:last-child {
+  border: none;
+}
+
+.title_container {
+  padding-bottom: 12px;
+}
+
+.title_title {
+  font-size: 17px;
+}
+
+.textItem_title {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.textItem_text {
+  color:rgba(0, 0, 0, 0.8);
+}

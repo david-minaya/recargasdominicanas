@@ -1,0 +1,45 @@
+.container {
+  background-color: #F5F5F5;
+}
+
+.content {
+  background-color: white;
+  padding: 40px 40px 60px; 
+  margin: 40px 40px 60px;
+}
+
+.logo {
+  width: 30px;
+}
+
+.title {
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  padding-left: 16px;
+}
+
+.sub-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 36px;
+  padding-bottom: 12px;
+}
+
+.label {
+  width: 280px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 24px;
+}
+
+.text {
+  width: 260px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  padding-top: 4px;
+  padding-right: 20px;
+}

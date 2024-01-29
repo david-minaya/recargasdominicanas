@@ -1,0 +1,43 @@
+.systemRequested {
+  text-align: center;
+  padding: 64px 24px 40px 24px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 28px;
+  margin-top: 44px;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 100;
+  max-width: 640px;
+  margin: 40px auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.socialMedia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.socialMediaDescription {
+  composes: description;
+  margin-top: 28px;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-size: 20px;
+  font-weight: 500;
+}

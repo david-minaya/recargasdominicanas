@@ -1,0 +1,140 @@
+.content {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.customerCard_container {
+  flex-shrink: 0;
+}
+
+.rightContent {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0px 12px 0px 48px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.loginInfo {
+  padding: 20px 16px;
+}
+
+.loginInfoContent {
+  display: flex;
+  margin-top: 32px;
+}
+
+.fillTextItem_container {
+  width: 260px;
+  background-color: var(--background-color);
+  border-radius: var(--large-border-radius);
+  border-bottom: 0px;
+  padding: 16px;
+  margin-right: 44px;
+}
+
+.fillTextItem_content {
+  margin-top: 12px;
+}
+
+.fillTextItem_text {
+  font-weight: 500;
+}
+
+.activationLink_container {
+  composes: fillTextItem_container;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.activationLink_content {
+  margin-top: 12px;
+}
+
+.activationLink_text {
+  color: var(--link-color);
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.appsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 260px);
+  column-gap: 52px;
+}
+
+.appCard {
+  width: 260px;
+  height: 290px;
+  display: flex;
+  flex-shrink: 0;
+  margin-top: 32px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appCard:nth-child(2) {
+  justify-self: center;
+}
+
+.appCard:last-child {
+  justify-self: flex-end;
+}
+
+.appCardImage {
+  height: 40px;
+  margin-top: 24px;
+}
+
+.appCardTitle {
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+.appCardVersion {
+  margin-top: 12px;
+}
+
+.appCardUrl {
+  composes: appCardVersion;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.externalIcon {
+  --size: 18px;
+  margin-left: 4px;
+  margin-top: 1px;
+}
+
+.appCardOptions {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.appCardOption_container {
+  width: calc(100% - 40px);
+  background-color: var(--background-color);
+  border-radius: 4px;
+  padding: 12px;
+  margin: 12px auto;
+  color: #4B4B4B;
+}
+
+.appCardOption_container * {
+  cursor: default;
+}
+
+.appCardOption_icon {
+  --size: 20px;
+}
+
+.appCardOption_text {
+  font-weight: 500;
+}

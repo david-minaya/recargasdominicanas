@@ -1,0 +1,25 @@
+.container {
+  width: 360px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: white;
+  padding: 16px;
+}
+
+.icon {
+  --size: 30px;
+  margin-right: 18px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Roboto;
+}
+
+.AAA_BBB {
+  color: blue;
+}

@@ -1,0 +1,37 @@
+.container {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 0px 0px 0px 8px;
+}
+
+.container:hover {
+  background-color: var(--background-color);
+}
+
+.container:active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.title {
+  line-height: 32px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0px 0px 0px 8px;
+}
+
+.margin12px {
+  margin-right: 12px;
+}
+
+.icon, .iconRight {
+  --size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.iconRight {
+  margin: 0px 4px;
+}

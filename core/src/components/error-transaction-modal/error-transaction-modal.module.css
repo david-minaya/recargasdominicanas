@@ -1,0 +1,11 @@
+.card {
+  background-color: white;
+}
+
+.error_container {
+  margin: 24px 0px 16px;
+}
+
+.error_message {
+  font-size: 15px;
+}

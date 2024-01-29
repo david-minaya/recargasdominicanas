@@ -1,0 +1,28 @@
+.title {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 20px 8px 0px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(92px, 120px));
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.productItem_container {
+  margin: 0px 0px 24px;
+}
+
+.productItem_container:hover {
+  background-color: transparent;
+}
+
+.productItem_container:active {
+  background-color: rgba(0, 0, 50, 4%);
+}
+
+.productItem_name {
+  font-size: 15px;
+}

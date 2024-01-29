@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px 0px;
+}
+
+.container:last-child {
+  border-bottom: none;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.text {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.green {
+  color: var(--money-color);
+}

@@ -1,0 +1,21 @@
+.container {
+  padding: 0px 32px 20px;
+}
+
+.toolbar {
+  height: 56px;
+  align-items: center;
+}
+
+.title_title {
+  font-size: 17px;
+}
+
+.content {
+  margin-top: 0px;
+}
+
+.tableHeader_cellContent {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}

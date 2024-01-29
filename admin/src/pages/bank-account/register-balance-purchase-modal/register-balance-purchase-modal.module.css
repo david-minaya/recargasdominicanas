@@ -1,0 +1,53 @@
+.modal_card {
+  width: 340px;
+  height: 640px;
+}
+
+.modal_content {
+  overflow: scroll;
+  padding: 0px 10px 4px 20px;
+}
+
+.textField_container, 
+.dateTime_container, 
+.taxesTextField_container,
+.select_container {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.textField_input, .taxesTextField_input {
+  height: 40px;
+  font-size: 15px;
+}
+
+.textField_container:first-child {
+  margin-top: 20px;
+}
+
+.select_popup {
+  padding: 8px 0px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.selectOption_container {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 15px;
+  padding: 10px 0px 10px 10px;
+}
+
+.taxesField {
+  position: relative;
+}
+
+.taxesTextField_input {
+  padding-right: 44px;
+}
+
+.toggle_container {
+  position: absolute;
+  bottom: 20px;
+  right: 8px;
+  transform: translateY(50%);
+}

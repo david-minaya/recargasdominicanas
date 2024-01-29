@@ -1,0 +1,47 @@
+.container {
+  padding: 0px 32px 20px;
+}
+
+.toolbar {
+  height: 52px;
+  align-items: center;
+}
+
+.title_title {
+  font-size: 17px;
+}
+
+.content {
+  margin-top: 0px;
+}
+
+.outlineCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.tableContainer {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.table_container {
+  padding-left: 16px;
+  padding-right: calc(16px - var(--scroll-width));
+  overflow-y: scroll;
+}
+
+.tableHeader_cellContent {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

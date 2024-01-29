@@ -1,0 +1,21 @@
+{
+  "name": "Recargas Dominicanas",
+  "description": "Sistemas de recargas para la Republica Dominicana",
+  "lang": "es-DO",
+  "display": "standalone",
+  "theme_color": "white",
+  "background_color": "white",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "recargas-dominicanas-32x32.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "recargas-dominicanas-144x144.svg",
+      "sizes": "144x144",
+      "type": "image/svg+xml"
+    }
+  ]
+}

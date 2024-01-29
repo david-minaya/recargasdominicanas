@@ -1,0 +1,22 @@
+.drawerHeader {
+  border-bottom: 1px solid var(--border-color);
+  padding: 20px 16px;
+}
+
+.businessName {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.businessUserName {
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.businessId {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 80%);
+  color: var(--accent-color);
+  margin-top: 16px;
+}

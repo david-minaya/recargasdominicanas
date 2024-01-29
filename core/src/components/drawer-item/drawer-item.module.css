@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  margin-top: 4px;
+}
+
+.container:hover {
+  background-color: var(--hover-color);
+}
+
+.icon {
+  --size: 28px;
+  color: #222222;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #222222;
+  margin-left: 24px;
+}

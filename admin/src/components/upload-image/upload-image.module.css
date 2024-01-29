@@ -1,0 +1,26 @@
+.container {
+  background-color: white;
+}
+
+.image {
+  width: 136px;
+  height: 136px;
+  display: block;
+  object-fit: scale-down;
+  margin: auto;
+}
+
+.uploadButton_base {
+  width: 136px;
+  margin-top: 32px;
+  padding: 0px 8px;
+}
+
+.uploadInput {
+  display: none;
+}
+
+.error {
+  margin-left: 0px;
+  margin-top: 16px;
+}

@@ -1,0 +1,61 @@
+.select_container {
+  width: 260px;
+}
+
+.select_input {
+  padding: 0px 8px 0px 12px;
+}
+
+.select_popup {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.circularProgress {
+  display: block;
+  margin: 12px auto;
+  color: var(--accent-color);
+}
+
+.circularProgress :global(.rmwc-circular-progress__path) {
+  stroke-width: 3px;
+}
+
+.dataPlanItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 8px;
+}
+
+.price {
+  color: var(--money-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dataPlansError {
+  width: 260px;
+  margin: 24px auto;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--large-border-radius);
+  display: flex;
+}
+
+.dataPlansErrorIcon {
+  flex-shrink: 0;
+  margin-right: 12px;
+  color: var(--accent-color);
+}
+
+.dataPlansErrorTitle {
+  color: var(--accent-color);
+  font-size: 14px;
+}
+
+.dataPlansErrorDescription {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 12px;
+}

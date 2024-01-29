@@ -1,0 +1,10 @@
+.outlineCard {
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: calc(16px - var(--scroll-width));
+  overflow-y: scroll;
+}

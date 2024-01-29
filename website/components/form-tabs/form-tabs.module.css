@@ -1,0 +1,45 @@
+.formTabs {
+  width: 100vw;
+  height: 100%;
+  box-sizing: border-box;
+  margin-top: 0px;
+  padding: 8px 16px 0px;
+}
+
+.tabs {
+  max-width: 800px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  background-color: #ffffff;
+  margin: auto;
+  padding-bottom: 12px;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  max-width: 800px;
+  height: calc(100% - 57px);
+  margin: auto;
+  padding: 0px 12px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  
+  .formTabs {
+    padding: 28px 28px 20px;
+  }
+}
+
+@media (min-height: 400px) {
+
+  .formTabs {
+    height: calc(100% - 64px);
+    margin-top: 64px;
+  }
+}

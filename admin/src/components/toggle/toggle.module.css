@@ -1,0 +1,28 @@
+.container {
+  width: 28px;
+  height: 16px;
+  position: relative;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  background-color: rgba(0, 0, 0, 0.25);
+  transition: background-color 160ms;
+  cursor: pointer;
+}
+
+.containerOn {
+  background-color: rgba(241, 38, 38, 90%);
+}
+
+.thumb {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 0px;
+  background-color: white;
+  border-radius: 7px;
+  transition: left 160ms;
+}
+
+.thumbOn {
+  left: calc(100% - 14px);
+}

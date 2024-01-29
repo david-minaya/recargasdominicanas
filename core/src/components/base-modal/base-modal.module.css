@@ -1,0 +1,11 @@
+.card {
+  background-color: white;
+}
+
+.toolbar_container {
+  border-bottom: none;
+}
+
+.toolbar_title {
+  font-size: 18px;
+}

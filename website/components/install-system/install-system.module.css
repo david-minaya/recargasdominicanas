@@ -1,0 +1,12 @@
+.installSystem {
+  height: 100%;
+}
+
+.installSystemSectionPC_image {
+  max-width: 300px;
+  width: 90%;
+}
+
+.installSystemSectionApp_image {
+  height: 300px;
+}

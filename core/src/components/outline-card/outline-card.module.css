@@ -1,0 +1,4 @@
+.outlineCard {
+  border: 1px solid var(--border-color);
+  border-radius: var(--large-border-radius);
+}

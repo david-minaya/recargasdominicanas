@@ -1,0 +1,10 @@
+.amountTextField_input::-webkit-outer-spin-button,
+.amountTextField_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.amountTextField_input {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}

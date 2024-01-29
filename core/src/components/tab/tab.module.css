@@ -1,0 +1,36 @@
+.container {
+  flex: 0 0 auto;
+  cursor: default;
+  padding: 8px 20px 0px;
+  border-radius: var(--small-border-radius);
+}
+
+.container:hover {
+  background-color: var(--background-color);
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.disabledTitle {
+  color: gray;
+}
+
+.indicator {
+  height: 4px;
+  margin-top: 8px;
+  border-radius: 1px;
+}
+
+.indicatorOn {
+  background-color: var(--accent-color);
+}
+
+@media (min-width: 768px) {
+
+  .tab {
+    margin: 0px 20px;
+  }
+}

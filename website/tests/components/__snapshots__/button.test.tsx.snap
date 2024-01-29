@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextButton snapshots snapshot with custom text 1`] = `
+<button
+  className="button"
+>
+  Text Button
+</button>
+`;
+
+exports[`TextButton snapshots snapshot with the default text 1`] = `
+<button
+  className="button"
+>
+  Button
+</button>
+`;

@@ -1,0 +1,33 @@
+.container {
+  width: 240px;
+  visibility: hidden;
+  position: fixed;
+  z-index: 3;
+  background-color: white;
+  border-radius: var(--small-border-radius);
+  box-shadow: 0px 1px 4px lightgray;
+  outline: none;
+  padding: 6px 0px;
+}
+
+.animation_enter {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.animation_enterActive {
+  transition: all 160ms;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.animation_exit {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.animation_exitActive {
+  transition: all 160ms;
+  opacity: 0;
+  transform: translateY(-8px);
+}

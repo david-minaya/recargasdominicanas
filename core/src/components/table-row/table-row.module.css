@@ -1,0 +1,11 @@
+.row {
+  height: 60px;
+}
+
+.row:hover {
+  background-color: var(--background-color);
+}
+
+.row:last-child .cell {
+  border-bottom: none;
+}

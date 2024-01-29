@@ -1,0 +1,78 @@
+.faq {
+  height: 100vh;
+}
+
+.faq b {
+  font-weight: 400;
+}
+
+.title {
+  max-width: 800px;
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 21px;
+  margin: 92px auto 40px;
+  padding: 0px 24px;
+}
+
+.faqs {
+  max-width: 800px;
+  min-height: calc(100% - 397px);
+  margin: 0px auto;
+  padding: 0px 24px;
+}
+
+.questionButton_base {
+  width: 250px;
+  color: white;
+  background-color: var(--accent-color);
+  display: block;
+  margin: 100px auto;
+}
+
+.bottomContainer {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 24px;
+  padding: 0px 24px;
+  pointer-events: none;
+}
+
+.floatButton_container {
+  pointer-events: auto;
+}
+
+.toast_container {
+  pointer-events: auto;
+  width: 100%;
+  max-width: inherit;
+  margin-top: 12px;
+}
+
+@media (min-width: 421px) {
+ 
+  .title {
+    font-size: 24px;
+    margin: 112px auto 52px;
+  }
+}
+
+@media (min-width: 650px) {
+
+  .bottomContainer {
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .toast_container {
+    width: auto;
+    max-width: 500px;
+    margin-top: 0px;
+  }
+}

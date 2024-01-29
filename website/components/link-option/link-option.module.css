@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  text-decoration: none;
+  margin: 20px 0px;
+}
+
+.icon_icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+.text {
+  color: var(--accent-color);
+  line-height: 24px;
+  font-weight: 500;
+  margin-left: 16px;
+}

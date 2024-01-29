@@ -1,0 +1,45 @@
+.modal_card {
+  width: 340px;
+  height: initial;
+  min-height: 504px;
+}
+
+.modal_content {
+  padding: 0px 20px;
+}
+
+.textField_container, .dateTime_container, .autocomplete_container {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.textField_input {
+  height: 40px;
+  font-size: 15px;
+}
+
+.textField_container:first-child {
+  margin-top: 20px;
+}
+
+.autocomplete_popup {
+  max-height: 200px;
+}
+
+.businessItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+}
+
+.businessId {
+  width: 32px;
+  flex-shrink: 0;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 500;
+}
+
+.businessName {
+  color: rgba(0, 0, 0, 0.8);
+}

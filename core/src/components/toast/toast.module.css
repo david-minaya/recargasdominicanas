@@ -1,0 +1,32 @@
+.container {
+  width: fit-content;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 24px;
+  color: white;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: auto;
+  z-index: 5;
+}
+
+.animation_enter {
+  opacity: 0;
+}
+
+.animation_enterActive {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.animation_exit {
+  opacity: 1;
+}
+
+.animation_exitActive {
+  opacity: 0;
+  transition: opacity 500ms;
+}

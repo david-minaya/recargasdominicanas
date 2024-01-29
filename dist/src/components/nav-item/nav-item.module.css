@@ -1,0 +1,27 @@
+.container {
+  --color: rgba(0, 0, 0, 80%);
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+.container:hover {
+  background-color: #00000008;
+}
+
+.icon {
+  color: var(--color);
+}
+
+.title {
+  flex-grow: 1;
+  color: var(--color);
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 24px;
+}
+
+.arrowIcon {
+  --size: 20px;
+  color: var(--color);
+}

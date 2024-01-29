@@ -1,0 +1,19 @@
+@import url('~@recargas-dominicanas/core/theme.css');
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+}
+
+* {
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:global #root {
+  height: 100%;
+}

@@ -1,0 +1,69 @@
+.container {
+  padding: 0px 32px 20px;
+}
+
+.toolbar {
+  height: 56px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.toolbarRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title_container {
+  width: 360px;
+  flex-grow: 0;
+}
+
+.title_title {
+  font-size: 17px;
+}
+
+.title_icon {
+  --size: 20px;
+}
+
+.content {
+  display: flex;
+  gap: 32px;
+  margin-top: 0px;
+}
+
+.outlineCard {
+  width: 360px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 80px;
+  margin: 40px;
+}
+
+.bankAccountsTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.table_outlineCard {
+  height: auto;
+  flex-grow: 1;
+}
+
+.tableHeader_container {
+  height: 48px;
+}
+
+.tableHeader_cellContent {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}

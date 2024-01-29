@@ -1,0 +1,23 @@
+.systemOption {
+  width: 250px;
+  height: 250px;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  object-fit: contain;
+}
+
+.text {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 28px;
+}
+
+.horizontalLine_line {
+  margin-top: 20px;
+}

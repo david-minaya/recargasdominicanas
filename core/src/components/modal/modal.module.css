@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 3;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(00, 00, 00, 0.27);
+}
+
+.card {
+  width: 288px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: var(--large-border-radius);
+  box-shadow: 0px 2px 12px gray;
+  z-index: 1;
+}
+
+.overlayEnterAnimation_appear {
+  opacity: 0;
+}
+
+.overlayEnterAnimation_appearActive {
+  transition: all 180ms;
+  opacity: 1;
+}
+
+.overlayExitAnimation_exit {
+  opacity: 1;
+}
+
+.overlayExitAnimation_exitActive {
+  transition: all 180ms;
+  opacity: 0;
+}
+
+.cardAnimation_appear {
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+
+.cardAnimation_appearActive {
+  transition: all 180ms ease-out;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.cardAnimation_exit {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: none;
+}
+
+.cardAnimation_exitActive {
+  transition: all 180ms ease-in;
+  opacity: 0;
+  transform: scale(0.9);
+}

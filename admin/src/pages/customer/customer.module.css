@@ -1,0 +1,41 @@
+.container {
+  overflow-x: auto;
+}
+
+.content {
+  min-width: 932px;
+  display: flex;
+}
+
+.toolbarTitle_container {
+  width: 360px;
+  flex-shrink: 0;
+  margin-right: 40px;
+}
+
+.toolbarRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.customerCard_container {
+  width: 360px;
+  margin-right: 40px;
+  flex-shrink: 0;
+}
+
+.salesReport_item:first-child {
+  margin-left: 0px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+}
+
+.option {
+  --size: 24px;
+  margin-left: 28px;
+}

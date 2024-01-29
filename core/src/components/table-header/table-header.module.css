@@ -1,0 +1,37 @@
+.container {
+  height: 52px;
+  align-items: center;
+  text-align: start;
+}
+
+.tab {
+  position: sticky;
+  top: 0;
+  text-align: start;
+  padding: 0px 26px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: white;
+  z-index: 1;
+  transition: transform 200ms;
+}
+
+.hiddenHeader {
+  transform: translateY(-100%);
+}
+
+.tab:first-child {
+  padding-left: 0px;
+}
+
+.tab:last-child {
+  width: 100%;
+  padding-right: 0px;
+}
+
+.cellContent {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+  white-space: nowrap;
+  cursor: default;
+}

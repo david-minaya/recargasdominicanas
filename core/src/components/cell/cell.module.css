@@ -1,0 +1,31 @@
+.cell {
+  font-size: 15px;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.green {
+  color: var(--money-color);
+}
+
+.black {
+  color: black;
+}
+
+.gray {
+  color: #666666;
+}
+
+.darkgray {
+  color: #333333;
+}
+
+.red {
+  color: var(--accent-color);
+}

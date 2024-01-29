@@ -1,0 +1,59 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.bankAccount {
+  display: flex;
+  padding: 28px 16px;
+}
+
+.bankAccountImage {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+}
+
+.bankAccountInfo {
+  flex-grow: 1;
+  margin-left: 24px;
+}
+
+.bankAccountName {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 90%);
+}
+
+.bankAccountNumber {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 90%);
+  margin-top: 12px;
+}
+
+.balanceTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 90%);
+  margin: 28px 16px 0px;
+}
+
+.balance {
+  color: var(--money-color);
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 16px 28px;
+}
+
+.button_base {
+  width: calc(100% - 32px);
+  height: 40px;
+  margin: 20px 16px 32px;
+}

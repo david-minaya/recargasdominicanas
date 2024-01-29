@@ -1,0 +1,27 @@
+.modal_card {
+  width: 312px;
+  min-height: initial;
+  margin: 16px;
+}
+
+.modalToolbar_container {
+  border-bottom: none;
+}
+
+.message {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.progress {
+  margin-top: 28px;
+}
+
+.downloadProgress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin: 12px 0px 20px;
+}

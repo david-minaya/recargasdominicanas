@@ -1,0 +1,123 @@
+.container {
+  overflow-x: auto;
+  padding: 0px 32px 20px;
+}
+
+.toolbar {
+  min-width: 800px;
+  height: 56px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.toolbarRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title_container {
+  width: 360px;
+  flex-grow: 0;
+}
+
+.title_title {
+  font-size: 17px;
+}
+
+.title_icon {
+  --size: 20px;
+}
+
+.content {
+  min-width: 800px;
+  display: flex;
+  gap: 32px;
+  margin-top: 0px;
+}
+
+.outlineCard {
+  width: 360px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.image {
+  display: block;
+  width: 80px;
+  margin: 40px auto;
+}
+
+.bankAccountTitle {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 40px;
+}
+
+.detailItem_container {
+  width: auto;
+  margin: 0px 24px;
+  padding: 20px 0px;
+}
+
+.detailItem_title {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.detailItem_text {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.detailItem_green {
+  color: var(--money-color);
+}
+
+.outlineCardRight {
+  height: auto;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.tab_container, .tab_container:first-of-type {
+  cursor: pointer;
+  padding: 0px;
+}
+
+.tab_container:first-of-type {
+  margin-left: 4px;
+}
+
+.tab_container:not(:last-of-type) {
+  margin-right: 48px;
+}
+
+.tab_container:hover {
+  background-color: unset;
+}
+
+.tab_title {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.tab_indicator {
+  border-radius: 2px;
+  margin: 12px 2px 0px;
+}
+
+.tableHeader_container {
+  height: 48px;
+}
+
+.tableHeader_cellContent {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.title {
+  font-size: 15px;
+}
+
+.value {
+  font-size: 15px;
+  font-weight: 500;
+  user-select: text;
+}
+
+.black {
+  color: rgba(0, 0, 0, 80%);
+}
+
+.green {
+  color: var(--money-color);
+}
+
+.red {
+  color: var(--accent-color);
+}

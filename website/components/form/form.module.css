@@ -1,0 +1,25 @@
+.form {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.inputs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+  overflow: auto;
+  padding: 16px 0px 24px 0px;
+}
+
+.column {
+  width: 260px;
+  margin: 0px 8px;
+}
+
+@media (min-height: 400px) {
+  
+  .inputs {
+    height: calc(100% - 44px);
+  }
+}

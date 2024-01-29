@@ -1,0 +1,23 @@
+.modal_card {
+  width: 324px;
+  height: initial;
+  min-height: 372px;
+}
+
+.modal_content {
+  padding: 0px 20px;
+}
+
+.textField_container:first-child {
+  margin-top: 20px;
+}
+
+.textField_container {
+  width: 100%;
+  margin: 24px 0px 8px;
+}
+
+.textField_input {
+  height: 40px;
+  font-size: 15px;
+}

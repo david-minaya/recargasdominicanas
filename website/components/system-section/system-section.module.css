@@ -1,0 +1,47 @@
+.systemSection {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px auto 0px;
+  padding: 0px 24px;
+}
+
+.image {
+  height: 400px;
+  object-fit: contain;
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+}
+
+.description {
+  width: 432px;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+@media (max-width: 1076px) {
+
+  .systemSection {
+    max-width: 600px;
+    margin-top: 60px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+  }
+}

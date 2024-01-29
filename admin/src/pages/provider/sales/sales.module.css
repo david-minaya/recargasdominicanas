@@ -1,0 +1,63 @@
+.container {
+  min-width: 1000px;
+  height: 100%;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.header {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between
+}
+
+.salesItems {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.amount {
+  color: var(--money-color);
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.options {
+  display: flex;
+  gap: 12px;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+  gap: 40px;
+  padding: 0px 4px 4px;
+}
+
+.contentRight {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.verticalBarChart {
+  flex-grow: 1;
+}

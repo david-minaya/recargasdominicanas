@@ -1,0 +1,7 @@
+.menu_container {
+  min-width: 220px;
+}
+
+.deleteOption_text {
+  color: var(--accent-color);
+}

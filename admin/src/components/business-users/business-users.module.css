@@ -1,0 +1,19 @@
+.container {
+  height: 100%;
+  padding: 20px 0px 0px 20px;
+  overflow: hidden;
+}
+
+.table_container {
+  overflow: scroll;
+  padding-right: 10px;
+}
+
+.tableHeader_tab {
+  border-top: 1px solid var(--border-color);
+}
+
+.addUser_base {
+  width: fit-content;
+  margin-left: auto;
+}

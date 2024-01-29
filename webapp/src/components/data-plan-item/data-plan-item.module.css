@@ -1,0 +1,7 @@
+.item_background:hover {
+  background-color:  var(--hover-color);
+}
+
+.item_background:active {
+  background-color:  var(--active-color);
+}

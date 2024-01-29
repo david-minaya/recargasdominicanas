@@ -1,0 +1,12 @@
+.container {
+  padding: 20px;
+}
+
+.option_base {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.option_base:not(:first-child) {
+  margin-top: 20px;
+}

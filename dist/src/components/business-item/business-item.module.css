@@ -1,0 +1,46 @@
+.container {
+  height: 96px;
+  position: relative;
+}
+
+.container:hover {
+  background-color: #00000008;
+}
+
+.container:last-child .divider {
+  display: none;
+}
+
+.item {
+  height: 100%;
+  display: grid;
+  align-content: space-between;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 20px 16px;
+}
+
+.divider {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.businessName {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 90%;
+}
+
+.id {
+  text-align: end;
+}
+
+.balance {
+  align-self: center;
+  color: var(--money-color);
+  font-size: 15px;
+  font-weight: 500;
+}

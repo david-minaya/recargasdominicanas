@@ -1,0 +1,10 @@
+.container {
+  border: 1px solid var(--border-color);
+  border-radius: var(--small-border-radius);
+  padding: 12px;
+  margin-top: 28px;
+}
+
+.row:not(:first-child) {
+  margin-top: 16px;
+}

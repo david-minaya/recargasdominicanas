@@ -1,0 +1,78 @@
+.modal_card {
+  width: calc(100% - 32px);
+  max-width: 340px;
+  min-height: 320px;
+}
+
+.toolbar_container {
+  border-bottom: none;
+}
+
+.bankAccount {
+  display: flex;
+  margin-top: 16px;
+}
+
+.bankAccountImage {
+  width: 36px;
+  height: 36px;
+}
+
+.bankAccountInfo {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-between;
+  margin-left: 24px;
+}
+
+.bankAccountName {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 90%);
+}
+
+.bankAccountNumber {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 90%);
+  margin-top: 12px;
+}
+
+.balance {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--money-color);
+}
+
+.autocomplete_container {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.autocomplete_popup {
+  max-height: 180px;
+  overflow: auto;
+}
+
+.businessItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.businessName {
+  font-size: 16px;
+}
+
+.businessId {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 80%);
+}
+
+.error_container {
+  margin: 24px 0px 16px;
+}

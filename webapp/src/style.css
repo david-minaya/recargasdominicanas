@@ -1,0 +1,7 @@
+@import url('~@recargas-dominicanas/core/theme.css');
+
+body {
+  --accent-color: #F12626;
+  --border-color: #ECECEC;
+  margin: 0px;
+}

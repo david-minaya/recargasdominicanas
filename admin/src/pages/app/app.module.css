@@ -1,0 +1,12 @@
+.app {
+  background-color: red;
+}
+
+.body {
+  display: flex;
+  height: calc(100vh - 45px);
+}
+
+.navBar_container {
+  height: 100%;
+}

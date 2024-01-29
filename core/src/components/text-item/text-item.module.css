@@ -1,0 +1,30 @@
+.container {
+  padding: 14px 0px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.title {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.text {
+  display: block;
+  font-family: Roboto;
+  font-size: 17px;
+  overflow: hidden;
+}
+
+.icon {
+  --size: 20px;
+  flex-shrink: 0;
+  margin-left: 12px;
+}

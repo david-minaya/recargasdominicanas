@@ -1,0 +1,5 @@
+.icon {
+  cursor: pointer;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}

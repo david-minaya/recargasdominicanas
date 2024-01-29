@@ -1,0 +1,58 @@
+.container {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+.floatButton_container {
+  right: 0px;
+  bottom: 0px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.popup {
+  display: grid;
+  grid-template-columns: repeat(3, 104px);
+  grid-template-rows: repeat(2, 120px);
+  row-gap: 8px;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  bottom: 80px;
+  right: 4px;
+  background-color: white;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.20);
+  border-radius: 8px;
+  padding: 12px 0px 20px;
+}
+
+.popupAnimation_enter {
+  opacity: 0.5;
+  transform: scale(0.8) translateY(20px);
+}
+
+.popupAnimation_enterActive {
+  transition: all 170ms;
+  transform: scale(1) translateY(0px);
+  opacity: 1;
+}
+
+.popupAnimation_exit {
+  opacity: 1;
+  transform: scale(1) translateY(0px);
+}
+
+.popupAnimation_exitActive {
+  transition: ease-in all 170ms;
+  opacity: 0;
+  transform: scale(0.8) translateY(20px);
+}

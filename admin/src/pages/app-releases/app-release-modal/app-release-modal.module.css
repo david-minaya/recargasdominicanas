@@ -1,0 +1,83 @@
+.modal_card {
+  width: 524px;
+  height: 660px;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldsContent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.textField_container {
+  width: 220px;
+  margin-top: 20px;
+}
+
+.textField_label {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.9)
+}
+
+.textField_input {
+  height: 40px;
+  font-size: 15px;
+}
+
+.title {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 28px;
+}
+
+.releaseNotes {
+  height: 380px;
+  flex-grow: 1;
+  overflow: auto;
+  margin-top: 8px;
+}
+
+.addButton_base {
+  margin-left: auto;
+  padding: 0px 4px;
+  margin-top: 8px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color:rgba(0, 0, 0, 0.9);
+  margin-top: 12px;
+}
+
+.paddingBottom {
+  padding-bottom: 20px;
+}
+
+.date {
+  padding-left: 4px;
+}
+
+.published {
+  color: var(--money-color);
+  font-weight: 500;
+}
+
+.modalActions_container {
+  width: 360px;
+}
+
+.error_container {
+  margin: 16px 20px 0px;
+}
+
+.indeterminateProgressBar_container {
+  margin: 12px 20px 0px;
+}

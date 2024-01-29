@@ -1,0 +1,32 @@
+.container {
+  height: 100%;
+  padding: 20px 0px 0px 20px;
+  overflow: hidden;
+}
+
+.table_container {
+  overflow: scroll;
+  padding-right: 10px;
+}
+
+.tableHeader_tab {
+  border-top: 1px solid var(--border-color);
+}
+
+.menu_container {
+  min-width: 220px;
+}
+
+.modal_card {
+  width: 360px;
+  min-height: min-content;
+  height: auto;
+}
+
+.modal_content {
+  margin-top: 16px;
+}
+
+.modal_label {
+  margin: 16px 0px 4px;
+}

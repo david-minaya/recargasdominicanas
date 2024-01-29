@@ -1,0 +1,8 @@
+/node_modules
+/package-lock.json
+/dist
+/images
+playground.ts
+service-account.json
+.env
+.env.test

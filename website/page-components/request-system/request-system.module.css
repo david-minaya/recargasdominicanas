@@ -1,0 +1,17 @@
+.requestSystem {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.header_container {
+  display: none;
+}
+
+@media (min-height: 400px) {
+  
+  .header_container {
+    display: block;
+  }  
+}

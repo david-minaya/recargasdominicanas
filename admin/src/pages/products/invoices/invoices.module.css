@@ -1,0 +1,11 @@
+.container {
+  height: 100%;
+  padding: 0px 16px;
+  overflow: hidden;
+  margin: 28px 0px 24px;
+}
+
+.table_container {
+  height: 100%;
+  overflow: scroll;
+}

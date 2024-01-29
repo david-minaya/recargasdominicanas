@@ -1,0 +1,33 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content {
+  flex-grow: 1;
+  overflow: auto;
+  padding: 0px 14px 0px 24px;
+}
+
+.title {
+  margin: 32px 0px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.textField_container {
+  width: 100%;
+  margin: 24px 0px;
+}
+
+.error_container {
+  margin-top: 28px;
+}
+
+.button_base {
+  width: 136px;
+  height: 36px;
+  margin: 40px 0px 28px auto;
+}

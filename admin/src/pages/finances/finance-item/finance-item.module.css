@@ -1,0 +1,21 @@
+.container {
+  min-width: 200px;
+  width: 240px;
+  flex-grow: 1;
+  border: 1px solid var(--border-color);
+  border-radius: var(--large-border-radius);
+  padding: 12px 16px;
+}
+
+.title {
+  color: rgba(0, 0, 0, 0.80);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.amount {
+  color: var(--money-color);
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 12px;
+}

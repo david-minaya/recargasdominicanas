@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.amount {
+  color: var(--money-color);
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}

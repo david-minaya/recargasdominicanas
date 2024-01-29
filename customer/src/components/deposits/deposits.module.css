@@ -1,0 +1,22 @@
+.container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.table_container {
+  width: initial;
+  padding: 0px 10px;
+  margin: 4px 0px 0px 10px;
+}
+
+.tableHeader_cellContent {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8)
+}
+
+.description {
+  width: 100%;
+  min-width: 280px;
+  white-space: normal;
+  padding: 8px 26px;
+}

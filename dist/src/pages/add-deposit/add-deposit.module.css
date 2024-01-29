@@ -1,0 +1,73 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  padding: 12px 14px 12px 24px;
+}
+
+.form {
+  flex-grow: 1;
+}
+
+.select_container,
+.textField_container,
+.autocomplete_container {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.autocomplete_content {
+  height: 44px;
+}
+
+.select_input {
+  height: 44px;
+}
+
+.autocomplete_popup {
+  max-height: 180px;
+  overflow: auto;
+}
+
+.selectItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.businessName {
+  font-size: 16px;
+}
+
+.businessId {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 80%);
+}
+
+.balance {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--money-color);
+}
+
+.error_container {
+  margin: 32px 0px 24px;
+}
+
+.button_base {
+  width: 136px;
+  height: 36px;
+  flex-shrink: 0;
+  margin: 32px 0px 12px auto;
+}

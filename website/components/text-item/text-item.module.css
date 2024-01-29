@@ -1,0 +1,14 @@
+.textItem {
+  margin-top: 24px;
+}
+
+.label {
+  color: rgb(50, 50, 50);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.text {
+  font-size: 17px;
+  margin-top: 6px;
+}

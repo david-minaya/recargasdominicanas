@@ -1,0 +1,22 @@
+@import url('@rmwc/circular-progress/circular-progress.css');
+
+.card {
+  width: 312px;
+  min-height: 0px;
+  height: 212px;
+}
+
+.modalToolbar_container {
+  border-bottom: none;
+}
+
+.modalContent {
+  display: flex;
+  justify-content: center;
+  margin: 28px 0px 0px;
+}
+
+.circularProgress :global(.rmwc-circular-progress__path) {
+  stroke-width: 4px;
+  color: var(--accent-color);
+}

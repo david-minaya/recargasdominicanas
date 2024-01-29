@@ -1,0 +1,43 @@
+.container {
+  overflow-x: auto;
+}
+
+.content {
+  min-width: 932px;
+  display: flex;
+}
+
+.toolbarTitle_container {
+  width: 360px;
+  flex-shrink: 0;
+  margin-right: 24px;
+}
+
+.toolbarRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.customerCard_container {
+  width: 360px;
+  margin-right: 40px;
+  flex-shrink: 0;
+}
+
+.outlineCard {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tab_container {
+  border-radius: 4px;
+  padding-top: 12px;
+  margin-bottom: 8px;
+}
+
+.tab_title {
+  color: rgba(0, 0, 0, 0.8);
+}

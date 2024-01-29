@@ -1,0 +1,57 @@
+.modal_card {
+  width: 340px;
+  min-height: 440px;
+  height: auto;
+}
+
+.autocomplete_container {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.autocomplete_popup {
+  max-height: 224px;
+}
+
+.productItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+.productItemImage {
+  width: 32px;
+  height: 32px;
+}
+
+.productItemInfo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productItemName {
+  display: block;
+  margin-left: 24px;
+}
+
+.productItemType {
+  width: 72px;
+  font-size: 15px;
+  font-style: italic;
+  color: #555555;
+}
+
+.productItemSelected {
+  composes: productItem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--small-border-radius);
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.textField_container {
+  width: 100%;
+  margin-top: 24px;
+}

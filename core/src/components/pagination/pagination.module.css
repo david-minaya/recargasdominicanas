@@ -1,0 +1,83 @@
+.container {
+  padding: 0px 20px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  border-top: 1px solid var(--border-color);
+  padding: 8px 0px;
+}
+
+.size {
+  display: flex;
+  align-items: center;
+  margin: 0px 32px 0px auto;
+}
+
+.select_container {
+  width: fit-content;
+  margin-left: 16px;
+}
+
+.select_input {
+  height: 28px;
+  padding: 0px 2px 0px 6px;
+}
+
+.select_value {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.select_expandMoreIcon {
+  --size: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-left: 2px;
+}
+
+.selectOption_container {
+  padding: 4px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.page {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  --size: 22px;
+  color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  margin: 0px 4px;
+}
+
+.icon:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.icon:active {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.iconDisabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.iconDisabled:hover {
+  background-color: transparent;
+}
+
+.divider {
+  height: 1px;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  right: 20px;
+  background-color: var(--border-color);
+}

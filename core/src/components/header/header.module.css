@@ -1,0 +1,36 @@
+.container {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0px 20px;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 12px;
+}
+
+.icon {
+  --size: 18px;
+}

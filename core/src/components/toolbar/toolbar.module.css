@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+}
+
+.option {
+  --size: 22px;
+  margin-left: 20px;
+  cursor: pointer;
+}

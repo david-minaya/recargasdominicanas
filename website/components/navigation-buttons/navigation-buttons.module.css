@@ -1,0 +1,40 @@
+.navigationButtons {
+  max-width: 900px;
+  height: 44px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.button {
+  width: auto;
+  display: inline-block;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 0px 4px;
+}
+
+.previousButton_base {
+  composes: button;
+  grid-column: 1;
+  justify-self: start;
+}
+
+.nextButton_base {
+  composes: button;
+  grid-column: 2;
+  justify-self: end;
+}
+
+.previousButton_disabled,
+.nextButton_disabled {
+  color: gray;
+  cursor: default;
+}
+
+.previousButton_hidden,
+.nextButton_hidden {
+  display: none;
+}
